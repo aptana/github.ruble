@@ -1,11 +1,10 @@
-require 'java'
 require 'ruble'
 
 bundle 'GitHub' do |bundle|
-  bundle.author = 'null'
-  bundle.contact_email_rot_13 = 'null'
-  bundle.description =  <<END
-null
+  bundle.author = 'Dr Nic Williams'
+  bundle.contact_email_rot_13 = 'qeavpjvyyvnzf@tznvy.pbz'
+  bundle.description = "GitHub RadRails bundle, ported from Dr Nic's Github TextMate bundle: http://github.com/drnic/github-tmbundle/tree/master"
+  bundle.repository = "git@github.com:aptana/github.ruble.git"
 END
 
   bundle.menu 'GitHub' do |main_menu|
