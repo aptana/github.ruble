@@ -1,10 +1,10 @@
 require 'ruble'
 
 bundle 'GitHub' do |bundle|
-  bundle.author = 'Dr Nic Williams'
-  bundle.contact_email_rot_13 = 'qeavpjvyyvnzf@tznvy.pbz'
+  bundle.author = 'Christopher Williams'
+  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.description = "GitHub RadRails bundle, ported from Dr Nic's Github TextMate bundle: http://github.com/drnic/github-tmbundle/tree/master"
-  bundle.repository = "git@github.com:aptana/github.ruble.git"
+  bundle.repository = "git://github.com/aptana/github.ruble.git"
 
   bundle.menu 'GitHub' do |main_menu|
     main_menu.command 'Show in GitHub'
