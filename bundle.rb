@@ -1,8 +1,9 @@
 require 'ruble'
 
-bundle 'GitHub' do |bundle|
+bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.display_name = 'GitHub'
   bundle.description = "GitHub RadRails bundle, ported from Dr Nic's Github TextMate bundle: http://github.com/drnic/github-tmbundle/tree/master"
   bundle.repository = "git://github.com/aptana/github.ruble.git"
 
