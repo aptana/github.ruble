@@ -3,6 +3,7 @@
 
 require 'open-uri'
 require 'net/http'
+require 'rbconfig'
 
 module Gist
   extend self
@@ -26,8 +27,13 @@ module Gist
     load_files
     url = URI.parse('http://gist.github.com/gists')
     req = Net::HTTP.post_form(url, data(private_gist))
-    url = copy req['Location']
-    puts "Created gist at #{url}. URL copied to clipboard."
+    if RbConfig::CONFIG['target_os'] =~ /(win|w)32$/
+      url = req['Location']
+      puts "Created glist at #{url}."
+    else
+      url = copy req['Location']
+      puts "Created gist at #{url}. URL copied to clipboard."
+    end
     clear
   end
   

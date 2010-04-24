@@ -17,5 +17,6 @@ bundle do |bundle|
     main_menu.separator
     main_menu.command 'Add to multifile Gist'
     main_menu.command 'Send multifile Gist'
+    main_menu.command 'Send private multifile Gist'
   end
 end
