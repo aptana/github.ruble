@@ -1,7 +1,7 @@
 require 'ruble'
 
 command 'Create private Gist from Selection' do |cmd|
-  cmd.key_binding = 'CONTROL+M2+OPTION+COMMAND+g'
+  cmd.key_binding = 'CONTROL+OPTION+COMMAND+g'
   cmd.output = :show_as_tooltip
   cmd.input = :selection, :document
   cmd.invoke do
