@@ -3,7 +3,6 @@
 
 require 'open-uri'
 require 'net/http'
-require 'ruble/platform'
 
 module Gist
   extend self
@@ -27,13 +26,8 @@ module Gist
     load_files
     url = URI.parse('http://gist.github.com/gists')
     req = Net::HTTP.post_form(url, data(private_gist))
-    if Ruble.is_windows?
-      url = req['Location']
-      puts "Created gist at #{url}."
-    else
-      url = copy req['Location']
-      puts "Created gist at #{url}. URL copied to clipboard."
-    end
+    url = copy(req['Location'])
+    puts "Created gist at #{url}. URL copied to clipboard."
     clear
   end
   
@@ -118,10 +112,8 @@ private
   end
   
   def copy(content)
-    # FIXME This won't work! We need to write up some java code to stick into clipboard!
-    return content if `which pbcopy`.strip == ''
-    IO.popen('pbcopy', 'r+') { |clip| clip.puts content }
-  	content
+    com.aptana.editor.common.scripting.commands.CommandExecutionUtils.copy_to_clipboard(content)
+    content
   end
 
   def data(private_gist)
