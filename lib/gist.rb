@@ -3,7 +3,7 @@
 
 require 'open-uri'
 require 'net/http'
-require 'rbconfig'
+require 'ruble/platform'
 
 module Gist
   extend self
@@ -27,9 +27,9 @@ module Gist
     load_files
     url = URI.parse('http://gist.github.com/gists')
     req = Net::HTTP.post_form(url, data(private_gist))
-    if RbConfig::CONFIG['target_os'] =~ /(win|w)32$/
+    if Ruble.is_windows?
       url = req['Location']
-      puts "Created glist at #{url}."
+      puts "Created gist at #{url}."
     else
       url = copy req['Location']
       puts "Created gist at #{url}. URL copied to clipboard."
@@ -118,6 +118,7 @@ private
   end
   
   def copy(content)
+    # FIXME This won't work! We need to write up some java code to stick into clipboard!
     return content if `which pbcopy`.strip == ''
     IO.popen('pbcopy', 'r+') { |clip| clip.puts content }
   	content

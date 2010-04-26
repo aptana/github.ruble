@@ -5,7 +5,7 @@ command 'Annotate/Blame/Comment Line' do |cmd|
   cmd.output = :show_as_tooltip
   cmd.input = :document
   cmd.invoke =<<-EOF
-RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+RUBYLIB="$TM_BUNDLE_SUPPORT:$RUBYLIB"
 "${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/comment_on_line.rb"
 
 

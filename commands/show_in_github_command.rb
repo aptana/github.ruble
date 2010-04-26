@@ -6,7 +6,7 @@ command 'Show in GitHub' do |cmd|
   cmd.input = :document
   cmd.invoke =<<-EOF
 #!/usr/bin/env ruby
-RUBYLIB="$TM_BUNDLE_SUPPORT/lib:$RUBYLIB"
+RUBYLIB="$TM_BUNDLE_SUPPORT:$RUBYLIB"
 "${TM_RUBY:=ruby}" -- "${TM_BUNDLE_SUPPORT}/bin/show_in_github.rb"
 
 

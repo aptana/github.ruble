@@ -5,7 +5,6 @@ command 'Send multifile Gist' do |cmd|
   cmd.output = :show_as_tooltip
   cmd.input = :selection
   cmd.invoke do
-     $:.unshift(File.dirname(__FILE__) + "/../lib/lib")
     require "gist"
 
     Gist.send(false)
