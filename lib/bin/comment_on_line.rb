@@ -13,7 +13,7 @@ begin
   if url = ShowInGitHub.line_to_github_url(ENV['TM_FILEPATH'], ENV['TM_CURRENT_LINE'])
     `open #{url}`
   else
-    puts "This line has been modified or commit has not been pushed to GitHub"
+    puts "This line has not been modified or commit has not been pushed to GitHub"
   end
 rescue NotGitRepositoryError
   puts "File/project not a git repository"
