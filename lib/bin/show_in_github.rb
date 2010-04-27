@@ -7,7 +7,7 @@ require "show_in_github"
 begin
   url = ShowInGitHub.url_for(ENV['TM_FILEPATH'])
   lines = ENV['TM_INPUT_START_LINE'] ? "#{ENV['TM_INPUT_START_LINE']}-#{ENV['TM_LINE_NUMBER']}" : ENV['TM_LINE_NUMBER']
-  if RUBY_PLATFORM.downcase =~ /(win|w)32/
+  if RUBY_PLATFORM.downcase =~ /(win|w)32$/
     `explorer #{url}#L#{lines}`
   else
     `open #{url}#L#{lines}`

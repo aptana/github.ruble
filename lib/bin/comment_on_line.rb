@@ -11,7 +11,11 @@ end
 
 begin
   if url = ShowInGitHub.line_to_github_url(ENV['TM_FILEPATH'], ENV['TM_CURRENT_LINE'])
-    `open #{url}`
+    if RUBY_PLATFORM.downcase =~ /(win|w)32$/
+      `explorer #{url}`
+    else
+      `open #{url}`
+    end
   else
     puts "This line has not been modified or commit has not been pushed to GitHub"
   end

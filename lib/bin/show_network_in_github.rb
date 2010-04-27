@@ -7,7 +7,7 @@ require "git_manager"
 begin
   git = GitManager.new(ENV['TM_FILEPATH'])
   url = git.github_url_for_project
-  if RUBY_PLATFORM.downcase =~ /(win|w)32/
+  if RUBY_PLATFORM.downcase =~ /(win|w)32$/
     `explorer #{url}network`
   else  
     `open #{url}network`
