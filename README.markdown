@@ -26,22 +26,9 @@ The bundle requires Ruby, RubyGems, and the
 Installation
 ============
 
-To install via Git:
+You can install it into Studio 3 using the **Commands > Bundle Development > Install Bundle** command.
 
-		mkdir -p ~/Documents/RadRails\ Bundles
-		cd ~/Documents/RadRails\ Bundles
-		git clone git://github.com/aptana/github.ruble.git
-
-Source can be viewed or forked via GitHub: [http://github.com/aptana/github.ruble/tree/master](http://github.com/aptana/github.ruble/tree/master)
-
-To install without Git:
-
-		mkdir -p ~/Documents/RadRails\ Bundles
-		cd ~/Documents/RadRails\ Bundles
-		wget http://github.com/aptana/github.ruble/tarball/master
-		tar zxf aptana-github.ruble*.tar.gz
-		rm aptana-github.ruble*.tar.gz
-		mv aptana-github.ruble* github.ruble
+Source can be viewed or forked via GitHub: [http://github.com/aptana/github.ruble](http://github.com/aptana/github.ruble)
 
 To enable [Gist](http://gist.github.com) support, make sure you've followed the instructions on your [account page](https://github.com/account) for adding your GitHub user and API Token to your global Git config. You can
 create gists without specifying your credentials, but they won't be associated with your account.
@@ -58,5 +45,6 @@ With contributions from:
 * [Geoff Cheshire](http://github.com/gtcaz)
 * [Loren Segal](http://github.com/lsegal)
 
-
 Ported to RadRails by Christopher Williams, cwilliams@aptana.com
+
+Distributed under the MIT license.
