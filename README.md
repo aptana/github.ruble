@@ -49,6 +49,6 @@ Source can be viewed or forked via GitHub: [http://github.com/aptana/github.rubl
 To enable [Gist](http://gist.github.com) support, make sure you've followed the instructions on your [account page](https://github.com/account) for adding your GitHub user and API Token to your global Git config. You can
 create gists without specifying your credentials, but they won't be associated with your account.
 
-## Other Stuff
+## Bugs/Requests
 
 * You can [report a bug or request a feature here](http://github.com/aptana/github.ruble/issues)
