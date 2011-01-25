@@ -78,7 +78,7 @@ class TestShowInGithub < Test::Unit::TestCase
     })
     GitManager.any_instance.stubs(:working_path).returns("/some/path")
     url = ShowInGitHub.url_for("/some/path/to/file")
-    expected = "http://github.com/drnic/newgem/tree/master/to/file"
+    expected = "https://github.com/drnic/newgem/tree/master/to/file"
     assert_equal(expected, url)
   end
 end
