@@ -74,8 +74,8 @@ children:
   displayName: Add to multifile Gist
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/add_to_multifile_gist.rb
@@ -88,8 +88,8 @@ children:
   displayName: Annotate/Blame/Comment Line
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: undefined
   path: commands/annotate_blame_comment_line.rb
@@ -102,8 +102,8 @@ children:
   displayName: Create Gist from Selection
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/create_gist_from_selection.rb
@@ -116,8 +116,8 @@ children:
   displayName: Create private Gist from Selection
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/create_private_gist_from_selection.rb
@@ -130,8 +130,8 @@ children:
   displayName: Send multifile Gist
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/send_multifile_gist.rb
@@ -144,8 +144,8 @@ children:
   displayName: Send private multifile Gist
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/send_private_multifile_gist.rb
@@ -158,8 +158,8 @@ children:
   displayName: Show in GitHub
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: undefined
   path: commands/show_in_github_command.rb
@@ -172,15 +172,15 @@ children:
   displayName: Show Network in GitHub
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
     !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
   outputPath: null
   outputType: undefined
   path: commands/show_network_in_github.rb
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: &id002 {}
 description: 'GitHub RadRails bundle, ported from Dr Nic''s Github TextMate bundle:
