@@ -72,10 +72,11 @@ children:
   async: false
   customProperties: null
   displayName: Add to multifile Gist
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/add_to_multifile_gist.rb
@@ -86,10 +87,11 @@ children:
   async: false
   customProperties: null
   displayName: Annotate/Blame/Comment Line
+  input: [document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: undefined
   path: commands/annotate_blame_comment_line.rb
@@ -100,10 +102,11 @@ children:
   async: false
   customProperties: null
   displayName: Create Gist from Selection
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/create_gist_from_selection.rb
@@ -114,10 +117,11 @@ children:
   async: false
   customProperties: null
   displayName: Create private Gist from Selection
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/create_private_gist_from_selection.rb
@@ -128,10 +132,11 @@ children:
   async: false
   customProperties: null
   displayName: Send multifile Gist
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/send_multifile_gist.rb
@@ -142,10 +147,11 @@ children:
   async: false
   customProperties: null
   displayName: Send private multifile Gist
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: show_as_tooltip
   path: commands/send_private_multifile_gist.rb
@@ -156,10 +162,11 @@ children:
   async: false
   customProperties: null
   displayName: Show in GitHub
+  input: [document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: undefined
   path: commands/show_in_github_command.rb
@@ -170,10 +177,11 @@ children:
   async: false
   customProperties: null
   displayName: Show Network in GitHub
+  input: [document]
   inputPath: null
   keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+G]
+    !!com.aptana.scripting.model.Platform 'MAC': [CONTROL+OPTION+COMMAND+G]
   outputPath: null
   outputType: undefined
   path: commands/show_network_in_github.rb
