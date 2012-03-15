@@ -1,0 +1,10 @@
+en:
+  bundle_name: 'GitHub'
+  show_in_github: 'Show in GitHub'
+  annotate_blame_line: 'Annotate/Blame/Comment Line'
+  show_network: 'Show Network in GitHub'
+  create_gist: 'Create Gist from Selection'
+  create_private_gist: 'Create private Gist from Selection'
+  add_to_multifile_gist: 'Add to multifile Gist'
+  send_multifile_gist: 'Send multifile Gist'
+  send_private_multifile_gist: 'Send private multifile Gist'

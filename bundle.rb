@@ -3,20 +3,20 @@ require 'ruble'
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "Copyright 2010 Aptana Inc. Distributed under the MIT license."
-  bundle.display_name = 'GitHub'
+  bundle.display_name = t(:bundle_name)
   bundle.description = "GitHub RadRails bundle, ported from Dr Nic's Github TextMate bundle: http://github.com/drnic/github-tmbundle/tree/master"
   bundle.repository = "git://github.com/aptana/github.ruble.git"
 
-  bundle.menu 'GitHub' do |main_menu|
-    main_menu.command 'Show in GitHub'
-    main_menu.command 'Annotate/Blame/Comment Line'
+  bundle.menu t(:bundle_name) do |main_menu|
+    main_menu.command t(:show_in_github)
+    main_menu.command t(:annotate_blame_line)
     main_menu.separator
-    main_menu.command 'Show Network in GitHub'
-    main_menu.command 'Create Gist from Selection'
-    main_menu.command 'Create private Gist from Selection'
+    main_menu.command t(:show_network)
+    main_menu.command t(:create_gist)
+    main_menu.command t(:create_private_gist)
     main_menu.separator
-    main_menu.command 'Add to multifile Gist'
-    main_menu.command 'Send multifile Gist'
-    main_menu.command 'Send private multifile Gist'
+    main_menu.command t(:add_to_multifile_gist)
+    main_menu.command t(:send_multifile_gist)
+    main_menu.command t(:send_private_multifile_gist)
   end
 end
